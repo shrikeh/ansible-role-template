@@ -12,8 +12,8 @@ install:
   - pip install ansible
 env:
   global:
-    - RSYSLOG8_TEST_HOSTNAME: localhost
-      RSYSLOG8_TEST_CONNECTION: local
+    - TEST_ANSIBLE_HOSTNAME: localhost
+      TEST_ANSIBLE_CONNECTION: local
 script:
   - ansible-playbook --syntax-check -i test/inventory test/playbook.yml
   - ansible-playbook -i test/inventory test/playbook.yml --connection=local --sudo -vvvv
