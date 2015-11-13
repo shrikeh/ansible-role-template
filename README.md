@@ -1,43 +1,47 @@
-Role Name
+# ansible-**role_name**
 =========
-
-
-[![Ansible Role](https://img.shields.io/ansible/role/**role_id**.svg)](https://galaxy.ansible.com/detail#/role/**role_id**)
-[![Build Status](https://travis-ci.org/shrikeh/**role_name**.svg)](https://travis-ci.org/shrikeh/**role_name**)
-[![GitHub Stars](https://img.shields.io/github/stars/shrikeh/**role_name**.svg)](https://github.com/shrikeh/**role_name**)
+[![Ansible Role](https://img.shields.io/ansible/role/ansible-**role_id**.svg)](https://galaxy.ansible.com/detail#/role/**role_id**)
+[![Build Status](https://travis-ci.org/shrikeh/ansible-**role_name**.svg)](https://travis-ci.org/shrikeh/ansible-**role_name**)
+[![GitHub Stars](https://img.shields.io/github/stars/shrikeh/ansible-**role_name**.svg)](https://github.com/shrikeh/ansible-**role_name**)
 
 A brief description of the role goes here.
 
-Requirements
+## Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+None.
 
-Role Variables
+## Role Variables
 --------------
+#### [`**role_name**_pkg_install_latest`][**role_name**_pkg_install_latest]
+Default: `no`
+Controls whether to use 'present' or 'latest' for package installation.
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
-
-Dependencies
+## Dependencies
 ------------
 
 A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
 
-Example Playbook
+## Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
+```YAML
+---
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - { role: shrikeh.**role_name** }
+...
+```
 
-License
+## License
 -------
 
-BSD
+[MIT][licence]
 
-Author Information
+## Author Information
 ------------------
+Contact me on Twitter @[barney_hanlon][twitter]
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+[**role_name**_pkg_install_latest]: https://github.com/shrikeh/ansible-**role_name**/blob/master/defaults/main.yml#L3 "Link to the variable definition in defaults.yml"
+[licence]: https://raw.githubusercontent.com/shrikeh/ansible-**role_name**/master/LICENSE "Link to the license in the repository"
+[twitter]: https://twitter.com/barney_hanlon "Link to my Twitter page"
