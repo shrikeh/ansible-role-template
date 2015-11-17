@@ -39,4 +39,4 @@ tmtagsHistory
 
 .*
 !.travis.yml
-!.gitignore
+!.git*
